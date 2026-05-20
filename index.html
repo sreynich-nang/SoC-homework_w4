@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -21,47 +21,30 @@
             "width" 100; */
         }
     </style>
-
 </head>
-
 <body class="background">
     <div class="heading">
-        <h1>Student Practice Webpage</h1>
-        <br>
+        <h1 class="mb-10">Student Practice Webpage</h1>
         <p>HTML + CSS Practice (Form + Table Advanced)</p>
-        <br>
     </div>
 
     <div class="form-container">
-        <h2>Image Section</h2>
-        <br>
-        <img 
-            src="/images/bigCat.png" alt="1Big Cat Image"
-            class="image-box"
-            >
+        <h2 class="mb-10">Image Section</h2>
+        <img src="/images/bigCat.png" alt="1Big Cat Image" class="image-box">
     </div>
 
     <div class="form-container">
-        <h2>Image Section</h2>
-        <br>
-        <img 
-            src="/images/bigCat.png" alt="2Big Cat Image"
-            class="img-circle"
-            >
+        <h2 class="mb-10">Image Section</h2>
+        <img src="/images/bigCat.png" alt="2Big Cat Image" class="img-circle">
     </div>
 
     <div class="form-container">
-        <h2>Image Section</h2>
-        <br>
-        <img 
-            src="/images/bigCat.png" alt="Big Cat Image"
-            class="img-oval"
-            >
+        <h2 class="mb-10">Image Section</h2>
+        <img src="/images/bigCat.png" alt="Big Cat Image" class="img-oval">
     </div>
 
     <div class="form-container">
-        <h2>Advanced Table</h2>
-        <br>
+        <h2 class="mb-10">Advanced Table</h2>
         <table border="1" cellpadding="5" cellspacing="0" bordercolor="lightgrey">
             <tr>
                 <th rowspan="2" class="table-filled-blue">Name</th>
@@ -69,8 +52,8 @@
                 <th rowspan="2" class="table-filled-blue">Grade</th>
             </tr>
             <tr>
-                <td class="table-filled-blue"><b>Math</b></td>
-                <td class="table-filled-blue"><b>CS</b></td>
+                <td class="table-filled-blue bold">Math</td>
+                <td class="table-filled-blue bold">CS</td>
             </tr>
             <tr>
                 <td style="text-align: center;">Alice</td>
@@ -88,28 +71,19 @@
     </div>
 
     <div class="form-container" style="align-items: center;">
-
         <form>
-        <h2>Form1: Basic Info</h2>
-        <br>
-            <label for="name"><b>Name</b></label>
-            <label for="name" class="required-red">*</label>
-            <br>
-            <input type="text" id="name" required class="form-filled"><br><br>
+            <h2 class="mb-10">Form1: Basic Info</h2>
+            <label for="name" class="bold block">Name <span class="required-red">*</span></label>
+            <input type="text" id="name" required class="form-filled mb-20">
 
-            <label for="email"><b>Email</b></label>
-            <label for="email" class="required-red">*</label>
-            <br>
-            <input type="email" id="email" required class="form-filled"><br><br>
+            <label for="email" class="bold block">Email <span class="required-red">*</span></label>
+            <input type="email" id="email" required class="form-filled mb-20">
 
-            <label for="password"><b>Password</b></label>
-            <label for="password" class="required-red">*</label>
-            <br>
-            <input type="password" id="password" required class="form-filled"><br><br>
+            <label for="password" class="bold block">Password <span class="required-red">*</span></label>
+            <input type="password" id="password" required class="form-filled mb-20">
 
-            <label for="upload"><b>Upload File</b></label>
-            <br>
-            <input type="file" id="upload" required class="form-filled"><br><br>
+            <label for="upload" class="bold block">Upload File</label>
+            <input type="file" id="upload" required class="form-filled mb-20">
 
             <input type="submit" value="Submit" class="button-blue">
             <input type="reset" value="Reset" class="button-blue">
@@ -118,53 +92,42 @@
 
     <div class="form-container" style="align-items: center;">
         <form>
-            <h2>Form2: Survey Form</h2>
-            <br>
-            <label for="course"><b>Choose a course:</b></label>
-            <br>
-            <span>
-            <select id="course" name="course" required class="form-filled">
+            <h2 class="mb-10">Form2: Survey Form</h2>
+            <label for="course" class="bold block">Choose a course:</label>
+            <select id="course" name="course" required class="form-filled mb-20">
                 <option value="">--select--</option>
                 <option value="math">Math</option>
                 <option value="science">Science</option>
                 <option value="history">History</option>
             </select>
-            <br><br>
-            </span>
 
-            <label for="gender"><b>Gender:</b></label>
-            <br>
-            <input type="radio" id="male" name="gender" > 
-            <label for="male" >Male</label> 
-            <input type="radio" id="female" name="gender" class="tap"> 
-            <label for="female">Female</label>
-            <br><br>
+            <label class="bold block">Gender:</label>
+            <div class="mb-20">
+                <input type="radio" id="male" name="gender">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" class="tap">
+                <label for="female">Female</label>
+            </div>
 
-            <label for="skill"><b>Skills:</b></label>
-            <br>
-            <input type="checkbox" id="python" value="python">
-            <label for="python">Python</label>
-            <input type="checkbox" id="java" value="java" class="tap">
-            <label for="java" >Java</label>
-            <input type="checkbox" id="javascript" value="javascript" class="tap">
-            <label for="javascript">JavaScript</label>
-            <br><br>
+            <label class="bold block">Skills:</label>
+            <div class="mb-20">
+                <input type="checkbox" id="python" value="python">
+                <label for="python">Python</label>
+                <input type="checkbox" id="java" value="java" class="tap">
+                <label for="java">Java</label>
+                <input type="checkbox" id="javascript" value="javascript" class="tap">
+                <label for="javascript">JavaScript</label>
+            </div>
 
-            <label for="phone"><b>Phone</b></label>
-            <label for="phone" class="required-red">*</label>
-            <br>
-            <input type="tel" id="phone" placeholder="Enter phone number" required class="form-filled">
+            <label for="phone" class="bold block">Phone <span class="required-red">*</span></label>
+            <input type="tel" id="phone" placeholder="Enter phone number" required class="form-filled mb-20">
 
-            <br><br>
-            <label for="message"><b>Message</b></label>
-            <br>
-            <textarea id="message" placeholder="Enter your message" class="form-filled"></textarea>
-            <br><br>
+            <label for="message" class="bold block">Message</label>
+            <textarea id="message" placeholder="Enter your message" class="form-filled mb-20"></textarea>
+            
             <input type="submit" value="Send" class="button-blue">
         </form>
     </div>
-
-
 </body>
-
 </html>
+<!-- Test git commit --amend -->

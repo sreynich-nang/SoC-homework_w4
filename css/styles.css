@@ -15,24 +15,24 @@
     padding: 5px 5px 5px 5px;
     text-align: center;
 }
+
 * {
-  margin: 0;
+        margin: 0;
 }
 
 .form-container {
     background-color: white;
-    padding: 20px; 
+    padding: 20px;
     border-radius: 20px;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     margin: 20px;
     position: relative;
     /* test */
     /* margin: 20px 20px 20px 20px; */
     /* margin: 20px 20px 20px; */
-    /* margin: 20px 20px;    */
+    /* margin: 20px 20px; */
     /* box-shadow:10px 4px 8px rgb(36, 172, 222); */
-    
 }
 
 .form-filled {
@@ -40,7 +40,7 @@
     border: 2px solid rgb(201, 199, 199);
     padding: 8px;
     border-radius: 8px;
-    display: flex; 
+    display: flex;
     flex-direction: column;
 }
 
@@ -55,6 +55,10 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.button-blue:hover {
+    background-color: rgb(19, 82, 156);
 }
 
 .tap {
@@ -84,5 +88,22 @@
 .img-oval {
     width: 300px;
     height: auto;
-    border-radius: 100px / 50px; 
+    border-radius: 100px / 50px;
 }
+
+.bold {
+    font-weight: bold;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.block {
+    display: block;
+}
+
