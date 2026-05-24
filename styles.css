@@ -1,0 +1,88 @@
+@media screen {
+    body {
+        min-width: fit-content;
+    }
+}
+
+.background {
+    background-color: rgb(224, 223, 223);
+}
+
+.heading {
+    color: white;
+    background-color: rgb(26, 102, 194);
+    border-radius: 0 0 20px 20px;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+}
+* {
+  margin: 0;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px; 
+    border-radius: 20px;
+    display: flex; 
+    flex-direction: column;
+    margin: 20px;
+    position: relative;
+    /* test */
+    /* margin: 20px 20px 20px 20px; */
+    /* margin: 20px 20px 20px; */
+    /* margin: 20px 20px;    */
+    /* box-shadow:10px 4px 8px rgb(36, 172, 222); */
+    
+}
+
+.form-filled {
+    width: 500px;
+    border: 2px solid rgb(201, 199, 199);
+    padding: 8px;
+    border-radius: 8px;
+    display: flex; 
+    flex-direction: column;
+}
+
+.required-red {
+    color: red;
+}
+
+.button-blue {
+    background-color: rgb(26, 102, 194);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tap {
+    margin-left: 20px;
+}
+
+.table-filled-blue{
+    background-color: rgb(22, 133, 212);
+    color: white;
+    text-align: center;
+}
+
+.image-box {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.img-circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: left center;
+}
+
+.img-oval {
+    width: 300px;
+    height: auto;
+    border-radius: 100px / 50px; 
+}
